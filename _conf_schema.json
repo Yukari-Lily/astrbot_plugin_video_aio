@@ -1,0 +1,41 @@
+{
+  "poll_interval": { "type": "int", "default": 6 },
+
+  "sora": {
+    "type": "object",
+    "items": {
+      "base_url": { "type": "string", "default": "http://127.0.0.1:8000" },
+      "api_key":  { "type": "string", "default": "123456" },
+      "model":    { "type": "string", "default": "sora-video" },
+      "timeout_seconds": { "type": "int", "default": 640 }
+    }
+  },
+
+  "grok": {
+    "type": "object",
+    "items": {
+      "base_url": { "type": "string", "default": "http://127.0.0.1:8000" },
+      "api_key":  { "type": "string", "default": "123456" },
+      "model":    { "type": "string", "default": "grok-imagine-0.9" },
+      "timeout_seconds": { "type": "int", "default": 180 }
+    }
+  },
+
+  "jimeng": {
+    "type": "object",
+    "items": {
+      "base_url": { "type": "string", "default": "http://127.0.0.1:5100" },
+      "session_token": { "type": "string", "default": "us-123456" },
+      "model": { "type": "string", "default": "jimeng-video-3.0" },
+      "resolution": { "type": "string", "default": "1080p" },
+      "timeout_seconds": { "type": "int", "default": 640 }
+    }
+  },
+  "network": {
+    "type": "object",
+    "items": {
+      "max_retries":   { "type": "int", "default": 2 },
+      "retry_backoff": { "type": "int", "default": 2 }
+    }
+  }
+}
